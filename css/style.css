@@ -1,0 +1,280 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #0B4F2D;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #013033;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://media.discordapp.net/attachments/1316086746278264904/1327390741793865728/image.png?ex=6782e476&is=678192f6&hm=071a84f6aee55a806313683a8966ee5e0a96f86f98714cfa59a3a67394cdfc15&=&width=1240&height=671') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-text h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px black;
+    color: #FFB800;
+}
+
+.hero-text p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #0B4F2D;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 0px;
+    margin-top: 20px;
+}
+
+.cta-btn:hover {
+    background-color: #0B4F2D;
+}
+
+/* Bridgend Section */
+.bridgend {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.bridgend .content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bridgend h2 {
+    font-size: 2.5rem;
+    color: #0B4F2D;
+}
+
+.bridgend-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.bridgend-details .detail {
+    width: 45%;
+}
+
+.bridgend-details .detail h3 {
+    font-size: 1.8rem;
+    color: #0B4F2D;
+}
+
+.bridgend-details .detail p {
+    margin-top: 10px;
+}
+
+/* Events Section */
+.events {
+    background-color: #F4F4F4;
+    padding: 60px 20px;
+}
+
+.events .content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.events .event-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.events .event {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.events .event h3 {
+    color: #0B4F2D;
+    font-size: 1.8rem;
+}
+
+.events .event p {
+    margin-top: 10px;
+}
+
+.event-btn {
+    background-color: #0B4F2D;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.event-btn:hover {
+    background-color: #0B4F2D;
+}
+
+/* Latest News Section */
+.latest-news {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.latest-news .content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.latest-news .news-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.latest-news .news-item {
+    background-color: #F4F4F4;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.latest-news .news-item h3 {
+    color: #0B4F2D;
+    font-size: 1.8rem;
+}
+
+.news-btn {
+    background-color: #FFB800;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.news-btn:hover {
+    background-color: #0B4F2D;
+}
+
+/* National Archives Section */
+.national-archives {
+    padding: 60px 20px;
+    background-color: #F4F4F4;
+    text-align: center;
+}
+
+.national-archives .cta-btn {
+    background-color: #FFB800;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.national-archives .cta-btn:hover {
+    background-color: #0B4F2D;
+}
+
+/* Join Us Section */
+.join-us {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #0B4F2D;
+    color: white;
+}
+
+.join-us .cta-btn {
+    background-color: #FFB800;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 30px;
+}
+
+.join-us .cta-btn:hover {
+    background-color: #0B4F2D;
+}
+
+/* Footer */
+footer {
+    background-color: #013033;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-links {
+    margin-bottom: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
