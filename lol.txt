@@ -1,0 +1,50 @@
+events {
+    worker_connections 1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+
+    sendfile        on;
+    keepalive_timeout  65;
+
+    # HTTP server block for localhost
+    server {
+        listen 80;
+        server_name localhost;
+
+        # Root directory and index file
+        root C:/Users/adaml/Downloads/nginx-1.27.3/nginx-1.27.3/html;
+        index html/index.html;
+
+        # Logging
+        access_log logs/localhost.access.log;
+        error_log logs/localhost.error.log;
+
+        # Main location block
+        location / {
+            try_files $uri $uri/ =404;
+        }
+
+        # Serve static files with caching
+        location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|eot|ttf|otf|webp|avif)$ {
+            expires 6M;
+            add_header Cache-Control "public";
+            try_files $uri $uri/ =404;
+        }
+
+        # Handle uploads directory
+        location /uploads/ {
+            root C:/Users/adaml/Downloads/nginx-1.27.3/nginx-1.27.3/html;
+            autoindex off;
+            client_max_body_size 20M; # Adjust upload size limit
+            add_header Cache-Control "public, max-age=31536000";
+        }
+
+        # Block access to sensitive files
+        location ~ /\. {
+            deny all;
+        }
+    }
+}
