@@ -118,6 +118,7 @@ header nav ul li a:hover {
 
 .bridgend-details .detail h3 {
     font-size: 1.8rem;
+    font-family: 'Merriweather', serif;
     color: #0B4F2D;
 }
 
@@ -155,6 +156,7 @@ header nav ul li a:hover {
 .events .event h3 {
     color: #0B4F2D;
     font-size: 1.8rem;
+    font-family: 'Merriweather', serif;
 }
 
 .events .event p {
@@ -203,6 +205,7 @@ header nav ul li a:hover {
 .latest-news .news-item h3 {
     color: #0B4F2D;
     font-size: 1.8rem;
+    font-family: 'Merriweather', serif;
 }
 
 .news-btn {
